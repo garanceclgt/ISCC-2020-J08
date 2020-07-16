@@ -1,39 +1,33 @@
-<!DOCTYPE html>  
-
 <html>
 
 <head>
 
-<title>mini-site-routine</title>
+    <titre>mini-site-routing</titre>
 
-<ul id="nav">
+</head>
+    
+<header>
+    
+<a href=>Accueil</a>   
+<a href=>Page2</a>  
+<a href=>Page3</a>  
+<a href=>connexion</a> 
 
-       <li> <a href="http://localhost:8888/ISCC-2020/ISCC-2020-J08/EXO-01/mini-site-routine.php?page=1">Accueil</a> </li>
+    
+<h1>  Bienvenue sur la page 
 
-    </br><li> <a href="http://localhost:8888/ISCC-2020/ISCC-2020-J08/EXO-01/mini-site-routine.php?page=2">Page 2 </a> </li>
-
-</br><li><a href="http://localhost:8888/ISCC-2020/ISCC-2020-J08/EXO-01/mini-site-routine.php?page=3">Page 3</a> </li>
-
-</ul>
-
-<?php 
-
-if ($_GET[page]==1) {
-
-echo "<h1> Accueil ! </h1>" 
-
-;}
-
-if ($_GET[page]==2) {
-
-    echo "<h1> Page 2 ! </h1>" 
-
-    ;}
-
-if ($_GET[page]==3) {
-
-    echo "<h1> Page 3 ! </h1>" 
-
-    ;}
-
-?>
+ <?php  
+     if ($_GET['page']=="1") { 
+     echo"Accueil";
+     }
+    if ($_GET['page']=="4") { 
+     echo"Connexion";
+     } 
+     else {
+         echo $_GET['page'];
+     }
+     ?> 
+</h1>
+</header>
+   
+</html>
